@@ -7,6 +7,29 @@
 ## Project Images
 - Design Reference: https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-piYRfvfFTZwvAocuCCemLROaSrSoRV.png
 
+### Generated Images (src/assets/images/)
+- **Hero Section**: hero-devices.jpg
+- **Product Images**:
+  - dell-xps-13.jpg
+  - sony-wh1000xm5.jpg
+  - iphone-15-pro.jpg
+  - samsung-galaxy-tab-s9.jpg
+  - macbook-air-m3.jpg
+  - airpods-pro-2.jpg
+  - samsung-galaxy-s24.jpg
+  - nintendo-switch-oled.jpg
+  - playstation-5.jpg
+  - logitech-mx-master-3s.jpg
+  - google-pixel-8-pro.jpg
+  - xbox-series-x.jpg
+- **Category Images**:
+  - smartphones.jpg
+  - laptops.jpg
+  - gaming.jpg
+  - accessories.jpg
+- **About Section**:
+  - team-workspace.jpg
+
 ## Suno Audio
 <!-- Add Suno generated audio link here -->
 [Suno Audio Placeholder]

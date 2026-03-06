@@ -3,6 +3,18 @@ import ProductCard from '../components/ProductCard'
 import CategoryCard from '../components/CategoryCard'
 import TrustBadge from '../components/TrustBadge'
 
+// Product images
+import dellXps13 from '../assets/images/products/dell-xps-13.jpg'
+import sonyWh1000xm5 from '../assets/images/products/sony-wh1000xm5.jpg'
+import iphone15Pro from '../assets/images/products/iphone-15-pro.jpg'
+import samsungTabS9 from '../assets/images/products/samsung-galaxy-tab-s9.jpg'
+
+// Category images
+import smartphonesImg from '../assets/images/categories/smartphones.jpg'
+import laptopsImg from '../assets/images/categories/laptops.jpg'
+import gamingImg from '../assets/images/categories/gaming.jpg'
+import accessoriesImg from '../assets/images/categories/accessories.jpg'
+
 const featuredProducts = [
   {
     id: 1,
@@ -10,7 +22,7 @@ const featuredProducts = [
     price: 789,
     rating: 4.5,
     reviews: 71,
-    image: null,
+    image: dellXps13,
     isNew: false,
   },
   {
@@ -19,7 +31,7 @@ const featuredProducts = [
     price: 169,
     rating: 4.8,
     reviews: 121,
-    image: null,
+    image: sonyWh1000xm5,
     isNew: false,
   },
   {
@@ -28,7 +40,7 @@ const featuredProducts = [
     price: 999,
     rating: 4.7,
     reviews: 74,
-    image: null,
+    image: iphone15Pro,
     isNew: true,
   },
   {
@@ -37,16 +49,16 @@ const featuredProducts = [
     price: 399,
     rating: 4.4,
     reviews: 21,
-    image: null,
+    image: samsungTabS9,
     isNew: false,
   },
 ]
 
 const categories = [
-  { name: 'Smartphones', slug: 'smartphones', icon: 'smartphones' },
-  { name: 'Laptops', slug: 'laptops', icon: 'laptops' },
-  { name: 'Gaming', slug: 'gaming', icon: 'gaming' },
-  { name: 'Accessories', slug: 'accessories', icon: 'accessories' },
+  { name: 'Smartphones', slug: 'smartphones', icon: 'smartphones', image: smartphonesImg },
+  { name: 'Laptops', slug: 'laptops', icon: 'laptops', image: laptopsImg },
+  { name: 'Gaming', slug: 'gaming', icon: 'gaming', image: gamingImg },
+  { name: 'Accessories', slug: 'accessories', icon: 'accessories', image: accessoriesImg },
 ]
 
 const trustBadges = [

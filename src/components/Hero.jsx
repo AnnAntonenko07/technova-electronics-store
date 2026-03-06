@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import heroDevices from '../assets/images/hero-devices.jpg'
 
 function Hero() {
   return (
@@ -31,38 +32,12 @@ function Hero() {
 
           {/* Product Images */}
           <div className="flex-1 relative">
-            <div className="flex items-center justify-center gap-4">
-              {/* Laptop */}
-              <div className="w-40 h-32 sm:w-56 sm:h-44 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                <div className="w-32 sm:w-44 h-24 sm:h-32 bg-secondary-800 rounded-lg relative">
-                  <div className="absolute inset-2 bg-gradient-to-br from-secondary-600 to-secondary-700 rounded"></div>
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 sm:w-28 h-1 bg-secondary-600 rounded-b"></div>
-                </div>
-              </div>
-
-              {/* Smartphone & Tablet Stack */}
-              <div className="flex flex-col gap-3">
-                <div className="w-16 sm:w-20 h-28 sm:h-36 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-12 sm:w-16 h-24 sm:h-32 bg-secondary-800 rounded-xl relative">
-                    <div className="absolute inset-1 bg-gradient-to-br from-primary-400 to-primary-500 rounded-lg"></div>
-                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-6 sm:w-8 h-1 bg-secondary-600 rounded"></div>
-                  </div>
-                </div>
-                <div className="w-20 sm:w-24 h-14 sm:h-16 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                  <div className="w-16 sm:w-20 h-10 sm:h-12 bg-secondary-800 rounded-lg relative">
-                    <div className="absolute inset-1 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded"></div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Headphones */}
-              <div className="w-24 sm:w-32 h-24 sm:h-32 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                <div className="relative">
-                  <div className="w-16 sm:w-20 h-4 bg-secondary-700 rounded-full"></div>
-                  <div className="absolute -left-1 top-2 w-6 sm:w-8 h-10 sm:h-12 bg-secondary-800 rounded-full"></div>
-                  <div className="absolute -right-1 top-2 w-6 sm:w-8 h-10 sm:h-12 bg-secondary-800 rounded-full"></div>
-                </div>
-              </div>
+            <div className="flex items-center justify-center">
+              <img
+                src={heroDevices}
+                alt="Latest electronics including laptop, smartphone, tablet, and headphones"
+                className="w-full max-w-lg h-auto object-contain rounded-xl"
+              />
             </div>
           </div>
         </div>

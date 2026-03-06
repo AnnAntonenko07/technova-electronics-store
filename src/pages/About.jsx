@@ -1,4 +1,5 @@
 import { Users, Target, Award, Globe } from 'lucide-react'
+import teamWorkspace from '../assets/images/about/team-workspace.jpg'
 
 const stats = [
   { label: 'Happy Customers', value: '50K+' },
@@ -87,13 +88,12 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl h-80 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white text-3xl font-bold">T</span>
-                </div>
-                <p className="text-primary-700 font-semibold">TechNova HQ</p>
-              </div>
+            <div className="rounded-2xl h-80 overflow-hidden">
+              <img
+                src={teamWorkspace}
+                alt="TechNova team workspace with modern technology"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

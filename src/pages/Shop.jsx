@@ -3,19 +3,33 @@ import { useSearchParams } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import { SlidersHorizontal, Grid, List } from 'lucide-react'
 
+// Product images
+import dellXps13 from '../assets/images/products/dell-xps-13.jpg'
+import sonyWh1000xm5 from '../assets/images/products/sony-wh1000xm5.jpg'
+import iphone15Pro from '../assets/images/products/iphone-15-pro.jpg'
+import samsungTabS9 from '../assets/images/products/samsung-galaxy-tab-s9.jpg'
+import macbookAirM3 from '../assets/images/products/macbook-air-m3.jpg'
+import airpodsPro2 from '../assets/images/products/airpods-pro-2.jpg'
+import samsungGalaxyS24 from '../assets/images/products/samsung-galaxy-s24.jpg'
+import nintendoSwitchOled from '../assets/images/products/nintendo-switch-oled.jpg'
+import playstation5 from '../assets/images/products/playstation-5.jpg'
+import logitechMxMaster3s from '../assets/images/products/logitech-mx-master-3s.jpg'
+import googlePixel8Pro from '../assets/images/products/google-pixel-8-pro.jpg'
+import xboxSeriesX from '../assets/images/products/xbox-series-x.jpg'
+
 const allProducts = [
-  { id: 1, name: 'Dell XPS 13', price: 789, rating: 4.5, reviews: 71, category: 'laptops' },
-  { id: 2, name: 'Sony WH-1000XM5', price: 169, rating: 4.8, reviews: 121, category: 'accessories' },
-  { id: 3, name: 'iPhone 15 Pro', price: 999, rating: 4.7, reviews: 74, category: 'smartphones', isNew: true },
-  { id: 4, name: 'Samsung Galaxy Tab S9', price: 399, rating: 4.4, reviews: 21, category: 'laptops' },
-  { id: 5, name: 'MacBook Air M3', price: 1199, rating: 4.9, reviews: 89, category: 'laptops', isNew: true },
-  { id: 6, name: 'AirPods Pro 2', price: 249, rating: 4.6, reviews: 156, category: 'accessories' },
-  { id: 7, name: 'Samsung Galaxy S24', price: 899, rating: 4.5, reviews: 62, category: 'smartphones' },
-  { id: 8, name: 'Nintendo Switch OLED', price: 349, rating: 4.7, reviews: 203, category: 'gaming' },
-  { id: 9, name: 'PlayStation 5', price: 499, rating: 4.8, reviews: 312, category: 'gaming' },
-  { id: 10, name: 'Logitech MX Master 3S', price: 99, rating: 4.6, reviews: 87, category: 'accessories' },
-  { id: 11, name: 'Google Pixel 8 Pro', price: 899, rating: 4.5, reviews: 45, category: 'smartphones' },
-  { id: 12, name: 'Xbox Series X', price: 499, rating: 4.7, reviews: 189, category: 'gaming' },
+  { id: 1, name: 'Dell XPS 13', price: 789, rating: 4.5, reviews: 71, category: 'laptops', image: dellXps13 },
+  { id: 2, name: 'Sony WH-1000XM5', price: 169, rating: 4.8, reviews: 121, category: 'accessories', image: sonyWh1000xm5 },
+  { id: 3, name: 'iPhone 15 Pro', price: 999, rating: 4.7, reviews: 74, category: 'smartphones', isNew: true, image: iphone15Pro },
+  { id: 4, name: 'Samsung Galaxy Tab S9', price: 399, rating: 4.4, reviews: 21, category: 'laptops', image: samsungTabS9 },
+  { id: 5, name: 'MacBook Air M3', price: 1199, rating: 4.9, reviews: 89, category: 'laptops', isNew: true, image: macbookAirM3 },
+  { id: 6, name: 'AirPods Pro 2', price: 249, rating: 4.6, reviews: 156, category: 'accessories', image: airpodsPro2 },
+  { id: 7, name: 'Samsung Galaxy S24', price: 899, rating: 4.5, reviews: 62, category: 'smartphones', image: samsungGalaxyS24 },
+  { id: 8, name: 'Nintendo Switch OLED', price: 349, rating: 4.7, reviews: 203, category: 'gaming', image: nintendoSwitchOled },
+  { id: 9, name: 'PlayStation 5', price: 499, rating: 4.8, reviews: 312, category: 'gaming', image: playstation5 },
+  { id: 10, name: 'Logitech MX Master 3S', price: 99, rating: 4.6, reviews: 87, category: 'accessories', image: logitechMxMaster3s },
+  { id: 11, name: 'Google Pixel 8 Pro', price: 899, rating: 4.5, reviews: 45, category: 'smartphones', image: googlePixel8Pro },
+  { id: 12, name: 'Xbox Series X', price: 499, rating: 4.7, reviews: 189, category: 'gaming', image: xboxSeriesX },
 ]
 
 const categories = ['All', 'Smartphones', 'Laptops', 'Gaming', 'Accessories']
